@@ -16,7 +16,7 @@ const OrderStatus = () => {
         } else {
             toast.error('Order Failed')
         }
-        // navigate('/')
+        navigate('/')
     }, []);
 
     return (

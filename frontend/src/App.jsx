@@ -34,7 +34,7 @@ const App = () => {
         <Route path='/profile' element={user ? <Profile /> : <Navigate to='/'/>} />
         <Route path='/cart' element={user ? <Cart /> : <Navigate to='/'/>} />
         <Route path='/admin' element={user?.role === 'admin' ? <Admin /> : <Navigate to='/'/>} />
-        <Route path='/order/:status' element={user ? <OrderStatus /> : <Navigate to='/'/>} />
+        <Route path='/order/:status' element={<OrderStatus />} />
         <Route path='/profile/:productId' element={user ? <OrderProduct /> : <Navigate to='/'/>} />
       </Routes>
       <Footer />
