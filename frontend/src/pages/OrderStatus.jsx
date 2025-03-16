@@ -16,12 +16,12 @@ const OrderStatus = () => {
         } else {
             toast.error('Order Failed')
         }
-        navigate('/')
+        // navigate('/')
     }, []);
 
     return (
         <div className="flex items-center justify-center">
-            {status && <Loader className="animate-spin"/>}
+            {status}
         </div>
     );
 };
