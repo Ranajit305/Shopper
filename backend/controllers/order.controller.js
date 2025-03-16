@@ -3,7 +3,7 @@ import Stripe from "stripe"
 import User from "../models/user.model.js";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const url = process.env.NODE_ENV === 'development' ? 'http://localhost:5173' : '/'
+const url = process.env.CLIENT_URL;
 
 export const getOrders = async (req, res) => {
     try {
