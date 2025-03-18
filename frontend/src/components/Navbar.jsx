@@ -22,8 +22,8 @@ const Navbar = () => {
                     <Account />
                 </div>
             </nav>
-            <div className={`text-black mt-10 sm:hidden`}>
-                <ul className="flex justify-center sm:hidden space-x-5 font-medium text-black">
+            <div className={`text-black mt-5 sm:hidden`}>
+                <ul className="flex justify-center sm:hidden space-x-3 font-medium text-black">
                     <Link to='/' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md transition">Home</Link>
                     <Link to='/shop' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md transition">Shop</Link>
                     <Link to='/about' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold shadow-md transition">About</Link>

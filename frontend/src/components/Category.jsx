@@ -49,7 +49,7 @@ const Category = () => {
             <div
                 className={`fixed top-0 left-0 h-full w-64 bg-white shadow-md transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
-                <h2 className="text-lg font-bold border-b p-3 pt-20">Categories</h2>
+                <h2 className="text-lg font-semibold border-b p-3 pt-20">Categories</h2>
                 <div className="p-4 space-y-2">
                     {categories?.map((category) => (
                         <label key={category} className="flex items-center space-x-2 cursor-pointer">

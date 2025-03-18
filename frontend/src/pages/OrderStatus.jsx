@@ -21,7 +21,7 @@ const OrderStatus = () => {
 
     return (
         <div className="flex items-center justify-center">
-            {status}
+            <Loader className="animate-spin text-blue-500 size-10"/>
         </div>
     );
 };

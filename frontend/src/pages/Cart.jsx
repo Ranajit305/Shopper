@@ -30,6 +30,7 @@ const Cart = () => {
 
     useEffect(() => {
         getCart();
+        window.scrollTo(0, 0);
     }, [])
 
     return (
