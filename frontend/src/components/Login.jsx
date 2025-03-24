@@ -26,11 +26,18 @@ const Login = ({ setModal }) => {
         <div>
             <div className='fixed inset-0 z-10 text-black bg-[rgba(0,0,0,0.3)] flex items-center justify-center'>
                 <form onSubmit={handleLogin} className='bg-white w-96 rounded-lg p-5 m-5'>
+
+                    <div className={`text-center border rounded-lg border-gray-300 mb-5 ${action !== 'Login' && 'hidden'}`}>
+                        <h2 className="text-xl font-bold text-gray-800 mb-2">Demo User:</h2>
+                        <p className="text-gray-600">Email: user@gmail.com</p>
+                        <p className="text-gray-600">Password: 12345</p>
+                    </div>
+
                     <div className='flex items-center justify-between'>
                         <h1 className='text-xl uppercase'>{action}</h1>
                         <X onClick={() => setModal(false)} className='cursor-pointer' />
                     </div>
-                    
+
                     <hr className='text-gray-300 mt-3 mb-3' />
 
                     {/* Name Input */}
